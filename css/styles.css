@@ -58,8 +58,8 @@ header {
   width: 100%;
   background-color: #ffffff;
   z-index: 99;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 /* NAV */
@@ -101,7 +101,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   row-gap: 4px;
-  color: rgba(65, 135, 255, 0.5);
+  color: #accaff;
   font-weight: 600;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -120,6 +120,20 @@ header {
   font-size: 1.5rem;
 }
 
+/* ACTIVE LINK */
+.active {
+  position: relative;
+  color: #4187ff;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+/* HEADER SHADOW WHEN SCROLLED DOWN */
+.scroll-header {
+  -webkit-box-shadow: 0 -1px 12px rgba(14, 62, 58, 0.15);
+          box-shadow: 0 -1px 12px rgba(14, 62, 58, 0.15);
+}
+
 @media screen and (max-width: 767px) {
   .nav-menu {
     position: fixed;
@@ -136,8 +150,8 @@ header {
     -ms-flex-line-pack: center;
         align-content: center;
     border-radius: 1.25rem 1.25rem 0 0;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
 }
 
@@ -161,8 +175,7 @@ header {
   .nav-link:hover {
     color: #4187ff;
   }
-  /* Minimalist design */
-  .active-link::before {
+  .active::before {
     bottom: -0.75rem;
   }
 }
