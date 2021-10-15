@@ -40,14 +40,13 @@ img {
 }
 
 .section-height {
-  height: 100vh;
+  height: auto;
 }
 
 /* CONTAINER */
 .container {
-  max-width: 968px;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  max-width: 1920px;
+  padding: 0 3rem;
 }
 
 /* HEADER */
@@ -134,6 +133,36 @@ header {
           box-shadow: 0 -1px 12px rgba(14, 62, 58, 0.15);
 }
 
+/* SKILLS SECTION */
+.skills-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 50px;
+  padding: 20px;
+}
+
+.skills-icon {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 21%;
+          flex: 1 0 21%;
+  max-height: 20vh;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.skills-icon:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
 @media screen and (max-width: 767px) {
   .nav-menu {
     position: fixed;
@@ -152,6 +181,14 @@ header {
     border-radius: 1.25rem 1.25rem 0 0;
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
+  }
+  .skills-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -188,12 +225,28 @@ header {
     -webkit-column-gap: 3rem;
             column-gap: 3rem;
   }
+  .skills-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .container {
     margin-left: auto;
     margin-right: auto;
+  }
+  .skills-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 /*# sourceMappingURL=styles.css.map */
