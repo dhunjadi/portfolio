@@ -133,12 +133,31 @@ header {
 }
 
 .skills-icon {
-  flex: 1 0 21%;
   max-height: 20vh;
   filter: grayscale(1);
 }
 
 .skills-icon:hover {
+  filter: none;
+}
+
+/* CONTACT SECTION */
+
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-icon{
+  max-height: 5vh;
+  filter: grayscale(1);
+  margin: 0 10px;
+}
+
+.contact-icon:hover {
   filter: none;
 }
 
@@ -162,6 +181,10 @@ header {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .contact-container{
+    padding: 20px 20px 7rem 20px;
   }
 }
 

@@ -150,15 +150,40 @@ header {
 }
 
 .skills-icon {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 21%;
-          flex: 1 0 21%;
   max-height: 20vh;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
 }
 
 .skills-icon:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+/* CONTACT SECTION */
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.contact-icon {
+  max-height: 5vh;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  margin: 0 10px;
+}
+
+.contact-icon:hover {
   -webkit-filter: none;
           filter: none;
 }
@@ -189,6 +214,9 @@ header {
         grid-template-rows: 1fr;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .contact-container {
+    padding: 20px 20px 7rem 20px;
   }
 }
 
