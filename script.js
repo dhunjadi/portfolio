@@ -26,3 +26,23 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scroll-header')
     }
 })
+
+/* Opening project images in modal */
+const modal = document.querySelector(".modal")
+const imgs = document.querySelectorAll(".project-img")
+const modalImg = document.querySelector(".modal-img")
+
+imgs.forEach(img => {
+    img.addEventListener('click', () => {
+       modal.classList.add("open")
+       // Show clicked image
+       const imgSrc = img.getAttribute("src")
+       modalImg.src = `${imgSrc}`
+    })
+})
+
+modal.addEventListener('click', (e) => {
+    if(e.target.classList.contains("modal")){
+        modal.classList.remove("open")
+    }
+})
