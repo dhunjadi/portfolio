@@ -254,6 +254,27 @@ header {
   z-index: 99;
 }
 
+.github-btn {
+  background-color: #212121;
+  color: #ffffff;
+  border: 2px solid #212121;
+  border-radius: 999px;
+  outline: none;
+  padding: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.github-btn:hover {
+  background-color: #ffffff;
+  color: #212121;
+  border: 2px solid #212121;
+  border-radius: 999px;
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
 /* MOBILE */
 @media screen and (max-width: 767px) {
   .nav-logo {
@@ -422,6 +443,7 @@ header {
   }
   .nav .get-in-touch {
     background-color: #212121;
+    border: 2px solid #212121;
     border-radius: 999px;
     color: #ffffff;
   }

@@ -220,6 +220,27 @@ header {
   z-index: 99;
 }
 
+.github-btn{
+  background-color: $txtColor;
+  color: $bgColor;
+  border: 2px solid $txtColor;
+  border-radius: 999px;
+  outline: none;
+  padding: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.github-btn:hover{
+  background-color: $bgColor;
+  color: $txtColor;
+  border: 2px solid $txtColor;
+  border-radius: 999px;
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
 /* MOBILE */
 @media screen and (max-width: 767px) {
 
@@ -359,7 +380,8 @@ header {
     }
 
     .get-in-touch{
-      background-color: $txtColor; 
+      background-color: $txtColor;
+      border: 2px solid $txtColor; 
       border-radius: 999px;
       color: $bgColor;
     }
