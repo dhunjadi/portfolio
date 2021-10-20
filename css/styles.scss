@@ -222,6 +222,11 @@ header {
 
 /* MOBILE */
 @media screen and (max-width: 767px) {
+
+  .nav-logo{
+    margin: 0 auto;
+  }
+
   .section {
     padding: 2rem 0 2rem;
   }
